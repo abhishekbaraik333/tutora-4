@@ -539,6 +539,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #02D4D4;
 }
+
 .contact-info {
     display: flex;
     justify-content: space-between;

@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
 
 
 
@@ -58,6 +58,7 @@
         }
 
         .form-group i {
+            position: absolute;
             top: 42px !important;
         }
 
@@ -87,10 +88,120 @@
             font-weight: 900 !important;
         }
 
+        .facebook-button {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        .facebook-icon {
+            font-size: 30px;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .facebook-button {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 24px;
+            }
+
+            .facebook-icon {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .facebook-button {
+                width: 40px;
+                height: 40px;
+                bottom: 15px;
+                right: 15px;
+                font-size: 20px;
+            }
+
+            .facebook-icon {
+                font-size: 20px;
+            }
+        }
+
+        .instagram-button {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        .instagram-icon {
+            font-size: 30px;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .instagram-button {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 24px;
+            }
+
+            .instagram-icon {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .instagram-button {
+                width: 40px;
+                height: 40px;
+                bottom: 15px;
+                right: 15px;
+                font-size: 20px;
+            }
+
+            .instagram-icon {
+                font-size: 20px;
+            }
+        }
+
         @media (max-width:640px) {
             .pricing-container {
                 width: 97%;
                 padding: 10px;
+            }
+
+            .form-group i {
+                top: 38px !important;
             }
         }
     </style>
@@ -99,109 +210,6 @@
 </head>
 
 <body>
-<style>    .facebook-button {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 40px;
-        right: 40px;
-        background-color: #25d366;
-        color: white;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 2px 2px 3px #999;
-        z-index: 100;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none; /* Remove underline */
-    }
-
-    .facebook-icon {
-        font-size: 30px;
-        color: white;
-    }
-
-    @media (max-width: 600px) {
-        .facebook-button {
-            width: 50px;
-            height: 50px;
-            bottom: 20px;
-            right: 20px;
-            font-size: 24px;
-        }
-
-        .facebook-icon {
-            font-size: 24px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .facebook-button {
-            width: 40px;
-            height: 40px;
-            bottom: 15px;
-            right: 15px;
-            font-size: 20px;
-        }
-
-        .facebook-icon {
-            font-size: 20px;
-        }
-    }
-    .instagram-button {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 40px;
-        right: 40px;
-        background-color: #25d366;
-        color: white;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 2px 2px 3px #999;
-        z-index: 100;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none; /* Remove underline */
-    }
-
-    .instagram-icon {
-        font-size: 30px;
-        color: white;
-    }
-
-    @media (max-width: 600px) {
-        .instagram-button {
-            width: 50px;
-            height: 50px;
-            bottom: 20px;
-            right: 20px;
-            font-size: 24px;
-        }
-
-        .instagram-icon {
-            font-size: 24px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .instagram-button {
-            width: 40px;
-            height: 40px;
-            bottom: 15px;
-            right: 15px;
-            font-size: 20px;
-        }
-
-        .instagram-icon {
-            font-size: 20px;
-        }
-    }
-</style>
 
 
     <!------------- Navbar Section ------------->
@@ -237,8 +245,9 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1 class="display-4">Le Tuteur privé de votre enfant à partir de 68DH par séance </h1>
-			<h6 style="color : white; font-style: italic;">Séance d’une heure, avec engagement de 6 mois et un format à distance
-</h6>
+                    <h6 style="color : white; font-style: italic;">Séance d’une heure, avec engagement de 6 mois et un
+                        format à distance
+                    </h6>
 
                 </div>
             </div>
@@ -257,8 +266,10 @@
                     Durée d’engagement:</label>
                 <select id="commitment-duration">
                     <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 Mois</option>
-                    <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 Mois (bénéficiez de -10%) </option>
-                    <option value="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 Mois (bénéficiez de -15%)</option>
+                    <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 Mois (bénéficiez de -10%)
+                    </option>
+                    <option value="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6 Mois (bénéficiez de -15%)
+                    </option>
                 </select>
             </div>
 
@@ -299,9 +310,9 @@
             <!-- Pricing Section -->
             <div class="pricing-result">
                 <h2>Votre Tarif :</h2>
-                <p>Par Session:  <span id="per-session-price"> </span> DH</p>
-                <p style="font-weight: bold;">Par Mois:  <span id="per-month-price"></span> DH</p>
-                
+                <p>Par Session: <span id="per-session-price"> </span> DH</p>
+                <p style="font-weight: bold;">Par Mois: <span id="per-month-price"></span> DH</p>
+
                 <button type="submit">S'inscrire</button>
             </div>
         </form>
@@ -310,40 +321,41 @@
     <!------------- Footer Section ------------->
     <footer>
         <div class="footer">
-          <div class="logo">
-            <img src="./logo fond bleu.png" width="120px" alt="Logo">
-          </div>
-          <div class="menu">
-            <h3>Nous découvrir</h3>
-            <a href="whoare">Qui sommes-nous</a>
-        <a href="services">Nos services</a>
-        <a href="tutors">Nos tuteurs</a>
-        <a href="index.html#clients">Avis clients</a>
-        <a href="blog">Blog</a>
-          </div>
-          <div class="social">
-            <h3>Réseaux sociaux</h3>
-            <a href="https://www.facebook.com/profile.php?id=61566188994771"> <i class="fa fa-facebook facebook-icon"></i></a>
-            <a href="https://www.instagram.com/tutoramaroc/"> <i class="fa fa-instagram instagram-icon"></i></a>
-            
-          </div>
-          <div class="contact">
-            <h3>Contact</h3>
-            <a href="tel:+212721034380">+212721034380</a>
-            <a href="mailto:contact@tutora.ma">contact@tutora.ma</a>
-            <a href="contact">Contact</a>
-          </div>
-          <div class="plus">
-            <h3>Informations utiles</h3>
-            <a href="cgv">CGV</a>
-            <a href="policy">Politique de confidentialité</a>
-            <a href="legal">Mentions légales</a>
-            <a href="faq">FAQ</a>
-          </div>
-          
-          
+            <div class="logo">
+                <img src="./logo fond bleu.png" width="120px" alt="Logo">
+            </div>
+            <div class="menu">
+                <h3>Nous découvrir</h3>
+                <a href="whoare">Qui sommes-nous</a>
+                <a href="services">Nos services</a>
+                <a href="tutors">Nos tuteurs</a>
+                <a href="index.html#clients">Avis clients</a>
+                <a href="blog">Blog</a>
+            </div>
+            <div class="social">
+                <h3>Réseaux sociaux</h3>
+                <a href="https://www.facebook.com/profile.php?id=61566188994771"> <i
+                        class="fa fa-facebook facebook-icon"></i></a>
+                <a href="https://www.instagram.com/tutoramaroc/"> <i class="fa fa-instagram instagram-icon"></i></a>
+
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <a href="tel:+212721034380">+212721034380</a>
+                <a href="mailto:contact@tutora.ma">contact@tutora.ma</a>
+                <a href="contact">Contact</a>
+            </div>
+            <div class="plus">
+                <h3>Informations utiles</h3>
+                <a href="cgv">CGV</a>
+                <a href="policy">Politique de confidentialité</a>
+                <a href="legal">Mentions légales</a>
+                <a href="faq">FAQ</a>
+            </div>
+
+
         </div>
-      </footer>
+    </footer>
 
 
     <script src="script.js"></script>
@@ -366,7 +378,7 @@
                 "120": { "online": 142, "home": 178 }
             },
             "6": { // 6 months pricing
-                "60": { "online": 67, "home": 84},
+                "60": { "online": 67, "home": 84 },
                 "90": { "online": 100, "home": 126 },
                 "120": { "online": 134, "home": 168 }
             }
