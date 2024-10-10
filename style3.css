@@ -596,6 +596,10 @@ button[type="submit"]:hover {
     width: 200px !important;
   }
   
+  .form-group i {
+    top: 38px !important;
+}
+  
 }
 
 @media (max-width:1024px){
