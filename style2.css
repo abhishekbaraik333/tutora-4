@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #01013F;
+}
+:root{
+    --pink: #F91972;
+    --blue:#01013F;
+    --ciyan: #00D4D0; 
+}
+.btn{
+    margin-top: 50px;
+    padding: 12px 30px;
+    background-color: var(--pink);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+body{
+    background: rgb(231, 231, 231);
+}
+.container_banner{
+    max-width: 1440px;
+    margin: auto;
+}
+/* ========================================================
+Banner Text
+========================================================== */
+.container_banner .wrapper{
+    /* padding-top: 90px ;
+    padding-bottom: 100px; */
+    padding: 100px 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container_banner .wrapper .left-side-text{
+    max-width: 45%;
+}
+.container_banner .wrapper .left-side-text h1, .container .wrapper .left-side-text h1 .h-lecole {
+    font-family: "Oswald" , sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 71px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+.container_banner .wrapper .left-side-text h1 .h-lecole{
+    color: var(--pink);
+}
+.container_banner .wrapper .left-side-text p{
+    line-height: 23px;
+}
+.container_banner .left-side-text .btn2{
+    margin-left: 20px;
+}
+/* ========================================================
+Banner Images
+========================================================== */
+/* .container .wrapper .right-side-shapes{
+} */
+ .container_banner .wrapper .shape1-img{
+    position: absolute;
+    height: 215px;
+    width: 361px;
+    right: 0;
+    border-bottom-left-radius: 50%;
+    background-color: #00D4D0;
+    transition: all 0.3s ease;
+ }
+.container_banner .right-side-shapes:hover .shape1-img{
+    width: 299px;
+}
+.container_banner .right-side-shapes:hover .shape-1-img{
+    padding-left: 65px;
+    /* top: 100px; */
+}
+.container_banner .wrapper .shape-1-img{
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0px;
+}
+.container_banner .wrapper .shape2{
+    height: 219px;
+    width: 230px;
+    border-radius: 50%;
+    position: absolute;
+    top: 215px;
+    background-color: var(--pink);
+    /* right: 148px; */
+    /* left: 16px; */
+    right: 0px;
+    transition: all 0.3s ease;
+}
+.container_banner .right-side-shapes:hover .shape2{
+    right: 50px;
+}
+.container_banner .wrapper .shape3{
+    max-height: 220px;
+    max-width: 230px;
+    border-radius: 50%;
+    position: absolute;
+    top: 215px;
+    /* right: 215px; */
+    right: 0px;
+    transition: all 0.3s ease;
+}
+.container_banner .right-side-shapes:hover .shape3{
+    right: 100px;
+}
+.container_banner .wrapper .responsive{
+    display: none;
+}
+/* ========================================================
+Responsive 
+========================================================== */
+@media (max-width:1400px) {
+    .container_banner .wrapper .left-side-text{
+        max-width: 50%;
+    }
+}
+@media (max-width:1300px) {
+    .container_banner .wrapper .shape2{
+        top: 204px;
+    }
+    .container_banner .wrapper .shape3{
+        top: 204px;
+    }
+}
+@media (max-width:1210px) {
+    .container_banner .wrapper .shape2{
+        top: 189px;
+        max-width: 215px;
+        max-height: 204px;
+    }
+    .container_banner .wrapper .shape3{
+        top: 189px;
+        max-width: 215px;
+    }
+    .container_banner .wrapper .shape-1-img {
+        max-width: 264px;
+    }
+    .container_banner .wrapper .shape1-img{
+        height: 190px;
+        width: 323px;
+     }
+}
+@media (max-width:1100px) {
+    .container_banner .wrapper .shape2{
+        top: 172px;
+        max-width: 172px;
+        max-height: 172px;
+    }
+    .container_banner .wrapper .shape3{
+        top: 172px;
+        max-width: 183px;
+    }
+    .container_banner .wrapper .shape-1-img {
+        max-width: 235px;
+    }
+    .container_banner .wrapper .shape1-img{
+        height: 172px;
+        width: 287px;
+     }
+}
+@media (max-width:1050px) {
+    .container_banner .wrapper .shape2{
+        top: 166px;
+        max-width: 165px;
+        max-height: 165px;
+    }
+    .container_banner .wrapper .shape3{
+        top: 166px;
+        max-width: 176px;
+    }
+    .container_banner .wrapper .shape-1-img {
+        max-width: 235px;
+    }
+    .container_banner .wrapper .shape1-img{
+        height: 172px;
+        width: 287px;
+     }
+     .container_banner .wrapper .left-side-text h1, .container .wrapper .left-side-text h1 .h-lecole {
+        font-size: 54px;
+    }
+}
+@media (max-width:991px) {
+    .container_banner .wrapper .responsive{
+        display: block;
+    }
+    .container_banner .wrapper{
+        padding-top: 130px;
+        display: block;
+        justify-content: center;
+        max-width: 100%;
+        margin: auto;
+    }
+    .container_banner .wrapper .left-side-text{
+        max-width: 100%;
+    }
+    .btn{
+       margin-bottom: 50px;
+    }
+    .container_banner .wrapper .responsive{
+        display: block;
+    }
+    .container_banner .wrapper .right-side-shapes .images{
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .container_banner .wrapper .left-side-text p{
+        margin-bottom: 20px;
+    }
+    .container_banner .wrapper .left-side-text h1, .container .wrapper .left-side-text h1 .h-lecole {
+        font-size: 50px;
+        line-height: 75px;
+    }
+    .btn{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+@media (max-width:550px) {
+    .container_banner .wrapper .left-side-text h1, .container .wrapper .left-side-text h1 .h-lecole {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .container_banner .wrapper {
+        padding: 100px 20px 60px;
+    }
+    .tutor h1 {
+        padding-left: 80px;
+        padding-top: 70px;
+    }
+}
+@media (max-width:550px) {
+    .container_banner .wrapper .left-side-text h1, .container .wrapper .left-side-text h1 .h-lecole {
+        font-size: 27px;
+        line-height: 45px;
+    }
+    .container_banner .wrapper {
+        padding: 100px 20px 60px;
+    }
+}
